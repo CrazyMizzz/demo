@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.UserDao">
+
+    <resultMap id="UserResultMap" type="com.example.demo.domain.User">
+        <result column="id" jdbcType="BIGINT" property="id"/>
+        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+        <result column="pass_word" jdbcType="VARCHAR" property="passWord"/>
+        <result column="create_user" jdbcType="VARCHAR" property="createUser"/>
+        <result column="create_date" javaType="java.util.Date" jdbcType="TIMESTAMP" property="createDate"/>
+        <result column="update_user" jdbcType="VARCHAR" property="updateUser"/>
+        <result column="update_date" javaType="java.util.Date" jdbcType="TIMESTAMP" property="updateDate"/>
+        <result column="comment" jdbcType="VARCHAR" property="comment"/>
+    </resultMap>
+
+    <!--    <select id="get" resultType="com.example.demo.domain.User" resultMap="UserResultMap">-->
+    <!--        select u.* from user u where u.id = #{id}-->
+    <!--    </select>-->
+    <!--    <insert id="create" parameterType="com.example.demo.domain.User">-->
+    <!--        insert into user(user_name, pass_word,create_user,create_date,update_user,update_date,comment)-->
+    <!--        values(#{userName}, #{passWord},#{createUser},#{createDate},#{updateUser},#{updateDate},#{comment})-->
+    <!--    </insert>-->
+
+
+</mapper>
